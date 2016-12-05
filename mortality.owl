@@ -7,12 +7,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:uo="http://purl.obolibrary.org/obo/uo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality">
         <owl:imports rdf:resource="http://ontofox.hegroup.org/kmf6afbo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uo/releases/2016-05-13/uo.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/tcxv7ppa.owl"/>
     </owl:Ontology>
     
@@ -138,14 +136,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasUnit -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasUnit">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#isLocationOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#isLocationOf">
@@ -256,6 +246,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasAgeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasAgeValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasID -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasID">
@@ -263,14 +263,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PopulationUnit"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Registry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasValue -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasValue">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:DatatypeProperty>
     
 
@@ -322,19 +314,14 @@
 
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasUnit"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasValue"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AgeUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AgeUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
     </owl:Class>
     
 
@@ -349,7 +336,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Herd"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Herd"/>
     </owl:Class>
     
 
@@ -366,7 +352,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Beef">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ProductionType"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Dairy"/>
     </owl:Class>
     
 
@@ -389,7 +374,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Country"/>
     </owl:Class>
     
 
@@ -463,6 +447,14 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Location -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Month -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Month">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AgeUnit"/>
+    </owl:Class>
     
 
 
@@ -602,6 +594,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AgeUnit"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -622,53 +622,6 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#FarmerNillson -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#FarmerNillson"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#HealthInformation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Location"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Observation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Person"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PopulationUnit"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ProductionType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Registry"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Role"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Species"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Birth"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Death"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Movement"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PartialCarcassCondemnations"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#TestRequest"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#TestResult"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#WholeCarcassCondemnations"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#LaboratoryRegistry"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RenderingRegistry"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#SlaughterRegistry"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
