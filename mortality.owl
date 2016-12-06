@@ -8,10 +8,18 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality">
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/qqfz0fkz.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/rnz3mjyi.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/kmf6afbo.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/sv7tvrz2.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/aoscz50z.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/492mpbcb.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/q5fvmrkx.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/tcxv7ppa.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/e4epq55i.owl"/>
     </owl:Ontology>
     
 
@@ -153,6 +161,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#isMadeOn">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#isSubjectOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Observation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnatomicalStructure"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PopulationUnit"/>
     </owl:ObjectProperty>
     
@@ -259,6 +268,7 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasID -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Location"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Person"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PopulationUnit"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Registry"/>
@@ -296,6 +306,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#HealthInformation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_7 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_7">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9821 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9821">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Species"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9895 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9895">
@@ -312,6 +346,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000062 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000062">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnatomicalStructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000982 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000982">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnatomicalStructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001488 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000982"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002415 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002415">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#BodyPart"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
@@ -323,6 +389,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AgeUnit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnatomicalStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnatomicalStructure"/>
     
 
 
@@ -348,6 +420,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnteMortem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnteMortem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#CondemnationsAtSlaughter"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PostMortem"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Beef -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Beef">
@@ -360,6 +441,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Birth">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#BodyPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#BodyPart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#AnatomicalStructure"/>
     </owl:Class>
     
 
@@ -382,6 +471,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ClinicalSigns">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#HealthInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#CondemnationsAtSlaughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#CondemnationsAtSlaughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
     </owl:Class>
     
 
@@ -444,9 +541,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#LaboratoryTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#LaboratoryTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Lesion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Lesion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ClinicalSigns"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Location -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#MeatInspector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#MeatInspector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Veterinarian"/>
+    </owl:Class>
     
 
 
@@ -475,7 +596,7 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PartialCarcassCondemnations -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PartialCarcassCondemnations">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PostMortem"/>
     </owl:Class>
     
 
@@ -489,6 +610,14 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PopulationUnit -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PopulationUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PostMortem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PostMortem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#CondemnationsAtSlaughter"/>
+    </owl:Class>
     
 
 
@@ -573,7 +702,7 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#TestRequest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#TestRequest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#LaboratoryTest"/>
     </owl:Class>
     
 
@@ -581,7 +710,15 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#TestResult -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#TestResult">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#LaboratoryTest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Veterinarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Veterinarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Role"/>
     </owl:Class>
     
 
@@ -589,7 +726,7 @@
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#WholeCarcassCondemnations -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#WholeCarcassCondemnations">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#PostMortem"/>
     </owl:Class>
     
 
