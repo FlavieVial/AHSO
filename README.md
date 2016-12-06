@@ -7,5 +7,6 @@ To view the project’s community discussion forum, go to https://groups.google.
 
 **Note that AHSO is under development and its existing content requires several more rounds of editing for proper description of terms.**
 
-![Image of AHSO Plan](C:\Users\flavie\Desktop\Epi-Connect\Work for SVA\Ontology\Ontology Dvp Work Plan.png)
+![Image of AHSO Plan](https://github.com/SVA-SE/AHSO/blob/master/docs/img/Ontology%20Dvp%20Work%20Plan.PNG)
+
 
