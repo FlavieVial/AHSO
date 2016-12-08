@@ -378,6 +378,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ActiveSurveillance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ActiveSurveillance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Age"/>
@@ -663,6 +671,14 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#Death"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ResearchObservation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#ResearchObservation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavie/ontologies/2016/10/mortality#RecordType"/>
     </owl:Class>
     
 
