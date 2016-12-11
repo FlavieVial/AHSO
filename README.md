@@ -1,4 +1,4 @@
-Animal Health Surveillance Ontology
+#Animal Health Surveillance Ontology
 
 This is the GitHub repository for the Animal Health Surveillance Ontology (AHSO) project. This project aims to develop an ontology for veterinary syndromic surveillance, which will facilitate the development of smart systems for disease surveillance and early disease detection that do not rely on the existence of standard coding practices at source.  
 
