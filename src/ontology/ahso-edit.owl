@@ -515,14 +515,6 @@
     
 
 
-    <!-- urn:absolute:ahso.owl#DiagnosticInformation -->
-
-    <owl:Class rdf:about="urn:absolute:ahso.owl#DiagnosticInformation">
-        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
-    </owl:Class>
-    
-
-
     <!-- urn:absolute:ahso.owl#HealthInformation -->
 
     <owl:Class rdf:about="urn:absolute:ahso.owl#HealthInformation"/>
@@ -633,14 +625,6 @@
 
     <owl:Class rdf:about="urn:absolute:ahso.owl#PostMortem">
         <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#CondemnationsAtSlaughter"/>
-    </owl:Class>
-    
-
-
-    <!-- urn:absolute:ahso.owl#PreDiagnosticHealthInformation -->
-
-    <owl:Class rdf:about="urn:absolute:ahso.owl#PreDiagnosticHealthInformation">
-        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
     </owl:Class>
     
 
