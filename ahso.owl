@@ -56,32 +56,11 @@
     
 
 
-    <!-- urn:absolute:ahso.owl#hasAge -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasAge">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Animal"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- urn:absolute:ahso.owl#hasHealthInformation -->
 
     <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasHealthInformation">
         <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
         <rdfs:range rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- urn:absolute:ahso.owl#hasLocation -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasLocation">
-        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isLocationOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
-        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Registry"/>
-        <rdfs:comment>check whether a ppty can (and should in this case) be transitive and functional.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -131,16 +110,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Animal"/>
         <rdfs:range rdf:resource="urn:absolute:ahso.owl#Species"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- urn:absolute:ahso.owl#isLocationOf -->
-
-    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isLocationOf">
-        <rdfs:range rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
-        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Registry"/>
-        <rdfs:comment>think more about whether this ppty, which is the inverse of hasLocation, is really needed.</rdfs:comment>
     </owl:ObjectProperty>
     
 
