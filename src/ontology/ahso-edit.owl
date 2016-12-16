@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:ahso.owl#"
+     xml:base="urn:absolute:ahso.owl"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="urn:absolute:ahso.owl">
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/qqfz0fkz.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/rnz3mjyi.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/kmf6afbo.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/sv7tvrz2.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/aoscz50z.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/492mpbcb.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/q5fvmrkx.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/tcxv7ppa.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/e4epq55i.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:ahso.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#contains"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#containsRecordOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#containsRecordOf">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute:ahso.owl#contains"/>
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#hasRecordInRegistry"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#containsRecordType -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#containsRecordType">
+        <rdfs:subPropertyOf rdf:resource="urn:absolute:ahso.owl#contains"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasAge -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Animal"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Age"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasHealthInformation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasHealthInformation">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasLocation">
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isLocationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:comment>check whether a ppty can (and should in this case) be transitive and functional.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasPart">
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Herd"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasProductionType -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasProductionType">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Herd"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#ProductionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasRecordInRegistry -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasRecordInRegistry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Registry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasRole">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Person"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasSpecies -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#hasSpecies">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Animal"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Species"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isLocationOf">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:comment>think more about whether this ppty, which is the inverse of hasLocation, is really needed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isMadeOn -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isMadeOn">
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isSubjectOf"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#AnatomicalStructure"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isObservedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isObservedBy">
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isObserverOf"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isObserverOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isObserverOf">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Person"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isOwnedBy">
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isOwnerOf"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isOwnerOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isOwnerOf">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Person"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Animal"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Herd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isRecordedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isRecordedBy">
+        <owl:inverseOf rdf:resource="urn:absolute:ahso.owl#isRecorderOf"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isRecorderOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isRecorderOf">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Person"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isSubjectOf -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:ahso.owl#isSubjectOf">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+        <rdfs:range rdf:resource="urn:absolute:ahso.owl#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasAgeValue -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:ahso.owl#hasAgeValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#hasID -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:ahso.owl#hasID">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Person"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isObservedOn -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:ahso.owl#isObservedOn">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:ahso.owl#isRecordedOn -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:ahso.owl#isRecordedOn">
+        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_7 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_7">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9821 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9821">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Species"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9895 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9895">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Species"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000197 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SYMP_0000197">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#ClinicalSigns"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000062 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000062">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#AnatomicalStructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000982 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000982">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#AnatomicalStructure"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001488 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000982"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002415 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002415">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#BodyPart"/>
+    </rdf:Description>
+    
+
+
+    <!-- urn:absolute:ahso.owl#ActiveSurveillance -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#ActiveSurveillance">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Age -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Age"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#AgeUnit -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#AgeUnit">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Age"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#AnatomicalStructure -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#AnatomicalStructure"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Animal -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Animal">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#Herd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#AnimalOwner -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#AnimalOwner">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#AnteMortem -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#AnteMortem">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#CondemnationsAtSlaughter"/>
+        <owl:disjointWith rdf:resource="urn:absolute:ahso.owl#PostMortem"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Beef -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Beef">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#ProductionType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Birth -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Birth">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#BodyPart -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#BodyPart">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#City -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#City">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#ClinicalSigns -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#ClinicalSigns">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#CondemnationsAtSlaughter -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#CondemnationsAtSlaughter">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Country -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Country">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Dairy -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Dairy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#ProductionType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Death -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Death">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#HealthInformation -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#HealthInformation"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Herd -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Herd">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#PopulationUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#LaboratoryRegistry -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#LaboratoryRegistry">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#containsRecordType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#TestRequest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#containsRecordType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#TestResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#LaboratoryTest -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#LaboratoryTest">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Lesion -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Lesion">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#ClinicalSigns"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Location -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Location"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#MeatInspector -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#MeatInspector">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Veterinarian"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Month -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Month">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#AgeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Movement -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Movement">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Observation -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Observation"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#PartialCarcassCondemnations -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#PartialCarcassCondemnations">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#PostMortem"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Person -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Person"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#PopulationUnit -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#PopulationUnit"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#PostMortem -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#PostMortem">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#CondemnationsAtSlaughter"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#ProductionType -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#ProductionType"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#RecordType -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#RecordType"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Region -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Region">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Registry -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Registry"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#RenderingRegistry -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#RenderingRegistry">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#containsRecordType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#Death"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#ResearchObservation -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#ResearchObservation">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#RecordType"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Role -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Role"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#SlaughterRegistry -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#SlaughterRegistry">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Registry"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#containsRecordType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#PartialCarcassCondemnations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:ahso.owl#containsRecordType"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:ahso.owl#WholeCarcassCondemnations"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Species -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Species"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#TestRequest -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#TestRequest">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#LaboratoryTest"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#TestResult -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#TestResult">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#LaboratoryTest"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Veterinarian -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Veterinarian">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#WholeCarcassCondemnations -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#WholeCarcassCondemnations">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#PostMortem"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:ahso.owl#Year -->
+
+    <owl:Class rdf:about="urn:absolute:ahso.owl#Year">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#AgeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:ahso.owl#Daisy -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:ahso.owl#Daisy"/>
+    
+
+
+    <!-- urn:absolute:ahso.owl#FarmerNillson -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:ahso.owl#FarmerNillson"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
