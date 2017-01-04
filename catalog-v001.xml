@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/492mpbcb.owl" uri="src/ontology/Imports/tail.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/aoscz50z.owl" uri="src/ontology/Imports/Echinoccocis.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/e4epq55i.owl" uri="src/ontology/Imports/lung.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/kmf6afbo.owl" uri="Imports/abortion.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/q5fvmrkx.owl" uri="src/ontology/Imports/bursitis.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/qqfz0fkz.owl" uri="src/ontology/Imports/liver.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/rnz3mjyi.owl" uri="Imports/pig.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/sv7tvrz2.owl" uri="src/ontology/Imports/hock.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://ontofox.hegroup.org/tcxv7ppa.owl" uri="Imports/bovine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="http://purl.obolibrary.org/obo/uo.owl" uri="src/ontology/Imports/uo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="shadowed:http://ontofox.hegroup.org/kmf6afbo.owl" uri="src/ontology/Imports/abortion.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="shadowed:http://ontofox.hegroup.org/rnz3mjyi.owl" uri="src/ontology/Imports/pig.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="shadowed:http://ontofox.hegroup.org/tcxv7ppa.owl" uri="src/ontology/Imports/bovine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="shadowed:urn:absolute:ahso.owl" uri="src/ontology/ahso-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1481489404191" name="urn:absolute:ahso.owl" uri="ahso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/492mpbcb.owl" uri="src/ontology/Imports/tail.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/aoscz50z.owl" uri="src/ontology/Imports/Echinoccocis.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/e4epq55i.owl" uri="src/ontology/Imports/lung.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/kmf6afbo.owl" uri="Imports/abortion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/q5fvmrkx.owl" uri="src/ontology/Imports/bursitis.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/qqfz0fkz.owl" uri="src/ontology/Imports/liver.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/rnz3mjyi.owl" uri="Imports/pig.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/sv7tvrz2.owl" uri="src/ontology/Imports/hock.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://ontofox.hegroup.org/tcxv7ppa.owl" uri="Imports/bovine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="http://purl.obolibrary.org/obo/uo.owl" uri="src/ontology/Imports/uo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="shadowed:http://ontofox.hegroup.org/kmf6afbo.owl" uri="src/ontology/Imports/abortion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="shadowed:http://ontofox.hegroup.org/rnz3mjyi.owl" uri="src/ontology/Imports/pig.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="shadowed:http://ontofox.hegroup.org/tcxv7ppa.owl" uri="src/ontology/Imports/bovine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="shadowed:urn:absolute:ahso.owl" uri="src/ontology/ahso-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1481879814702" name="urn:absolute:ahso.owl" uri="ahso.owl"/>
     </group>
 </catalog>
