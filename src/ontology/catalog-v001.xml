@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/qj336538.owl" uri="Imports/pig.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/3ery7f5v.owl" uri="Imports/pig.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/bx9bybch.owl" uri="Imports/lung.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/k2qh2ogd.owl" uri="Imports/hock.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/ugx2fpax.owl" uri="Imports/Organ.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/vbf4ahq9.owl" uri="Imports/Tail.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/e4epq55i.owl" uri="Imports/lung.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/aazsb8ee.owl" uri="Imports/pig.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/ink43k8w.owl" uri="Imports/pig.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/7nbgthec.owl" uri="Imports/TimeUnit.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/enh83pth.owl" uri="Imports/Stillbirth.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/pdukzbyf.owl" uri="Imports/birth.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/enh83pth.owl" uri="file:/C:/Users/flavie/Desktop/Epi-Connect/Work%20for%20SVA/Ontology/AHSO/Imports/Stillbirth.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/7nbgthec.owl" uri="file:/C:/Users/flavie/Desktop/Epi-Connect/Work%20for%20SVA/Ontology/AHSO/Imports/TimeUnit.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/pdukzbyf.owl" uri="file:/C:/Users/flavie/Desktop/Epi-Connect/Work%20for%20SVA/Ontology/AHSO/Imports/birth.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/492mpbcb.owl" uri="Imports/tail.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/aoscz50z.owl" uri="Imports/Echinoccocis.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/e4epq55i.owl" uri="Imports/lung.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/kmf6afbo.owl" uri="Imports/abortion.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/q5fvmrkx.owl" uri="Imports/bursitis.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/qqfz0fkz.owl" uri="Imports/liver.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/rnz3mjyi.owl" uri="Imports/pig.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/sv7tvrz2.owl" uri="Imports/hock.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://ontofox.hegroup.org/tcxv7ppa.owl" uri="Imports/bovine.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="http://purl.obolibrary.org/obo/uo.owl" uri="Imports/uo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="duplicate:urn:absolute:ahso.owl" uri="ahso-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1483520186531" name="duplicate:urn:absolute:ahso.owl" uri="ahso-module1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/7nbgthec.owl" uri="Imports/TimeUnit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/bx9bybch.owl" uri="Imports/lung.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/enh83pth.owl" uri="Imports/Stillbirth.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/k2qh2ogd.owl" uri="Imports/hock.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/kmf6afbo.owl" uri="Imports/abortion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/pdukzbyf.owl" uri="Imports/birth.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/qj336538.owl" uri="Imports/pig.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/tcxv7ppa.owl" uri="Imports/bovine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/ugx2fpax.owl" uri="Imports/Organ.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="http://ontofox.hegroup.org/vbf4ahq9.owl" uri="Imports/Tail.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="duplicate:urn:absolute:ahso.owl" uri="ahso-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="duplicate:urn:absolute:ahso.owl" uri="ahso-module1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483527502404" name="duplicate:urn:absolute:ahso.owl" uri="ahso-modules1_2.owl"/>
     </group>
 </catalog>
