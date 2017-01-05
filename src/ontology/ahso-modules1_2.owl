@@ -13,7 +13,9 @@
     <owl:Ontology rdf:about="urn:absolute:ahso.owl">
         <owl:imports rdf:resource="http://ontofox.hegroup.org/vbf4ahq9.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/enh83pth.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/vpqwfd45.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/qj336538.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/0oe9bdnq.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/kmf6afbo.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/pdukzbyf.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/7nbgthec.owl"/>
@@ -306,7 +308,6 @@
     <!-- urn:absolute:ahso.owl#isObservedOn -->
 
     <owl:DatatypeProperty rdf:about="urn:absolute:ahso.owl#isObservedOn">
-        <rdfs:domain rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -329,6 +330,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050117 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_0050117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_4">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ahso.owl#HealthInformation"/>
+    </rdf:Description>
     
 
 
